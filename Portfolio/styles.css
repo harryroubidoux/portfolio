@@ -1,19 +1,20 @@
 body{
     background-color: rgba(7, 7, 170, 0.986);
 }
-header>img{
-    align-items: center;
-    width: 50rem;
-    max-width: 100%;
-}
 header{
-    width: 100%;
-display: flex;
-flex: wrap;
-align-items: center;
-flex-direction: column;
-justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
 
+header>nav{
+    
+    text-align: center;
+    max-width: 10rem;
+    padding-bottom: 10%;
 }
 nav>a{
     background-color: white;
@@ -34,6 +35,11 @@ text-align: center;
 border-top: 4px solid black;
 border-bottom: 4px solid black;
 }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .about{
     background-color: white;
     color: black;
@@ -52,7 +58,7 @@ border-bottom: 4px solid black;
     
 }
 .gallerydescription>img{
-    max-width: 40rem;
+    max-width: 100%;
     align-items: center;
 }
 .workexperience, .education, .achievements{
@@ -66,6 +72,48 @@ border-bottom: 4px solid black;
     margin: 1rem 1rem 1rem 1rem;
 }
 p{
+    color: black;
+    text-align: center;
+}
+.description>p{
+    color: white;
+}
+.gallerydescription>p{
     color: white;
     text-align: center;
+}
+h2{
+    flex-basis:  100%;
+}
+.contactdescription>p{
+    color: white;
+}
+.workexperience, .education, .achievements{
+    max-width: 30rem;
+   
+}
+@media (min-width:700px){
+    .workexperience, .education, .achievements{
+        padding: 1rem;
+        display: inline-block;
+        margin: .5rem;
+        vertical-align: top;
+        justify-content: center;
+    }
+    .description>p{
+        max-width: 40rem;
+        text-align: center;
+        
+    }
+    header{
+        display: flex;
+        flex: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main{
+        display: inline-block;
+       
+    }
 }
