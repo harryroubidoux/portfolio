@@ -105,15 +105,30 @@ h2{
         text-align: center;
         
     }
+   
+    main{
+        display: flex;
+        justify-content: center;
+       
+       
+    } 
     header{
         display: flex;
-        flex: wrap;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
+        
     }
-    main{
-        display: inline-block;
-       
+    .aboutdescription{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .description{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
     }
 }
